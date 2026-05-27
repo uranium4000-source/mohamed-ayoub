@@ -1,42 +1,52 @@
 body {
-  background: linear-gradient(to right, #141e30, #243b55);
-  font-family: Arial;
+  background: #1e1e2f;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
 .card {
   background: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 20px;
   text-align: center;
-  width: 300px;
+  width: 350px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-img {
-  width: 120px;
-  height: 120px;
+.profile {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 h1 {
-  margin-top: 15px;
+  color: #222;
 }
 
-.job {
-  color: gray;
+h2 {
+  color: #666;
+  font-size: 20px;
+}
+
+p {
+  color: #444;
+  margin: 20px 0;
 }
 
 a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: black;
-  color: white;
   text-decoration: none;
+  background: #ff4d6d;
+  color: white;
+  padding: 12px 25px;
   border-radius: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  background: #e63956;
 }
