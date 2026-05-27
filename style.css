@@ -1,52 +1,80 @@
 body {
-  background: #1e1e2f;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
 }
 
-.card {
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
+.hero {
   text-align: center;
-  width: 350px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  padding: 60px 20px;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
 }
 
 .profile {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  border: 5px solid white;
 }
 
-h1 {
-  color: #222;
+.hero h1 {
+  font-size: 50px;
+  margin-top: 20px;
 }
 
-h2 {
-  color: #666;
+.job {
   font-size: 20px;
+  color: #e5e7eb;
 }
 
-p {
-  color: #444;
-  margin: 20px 0;
-}
-
-a {
-  text-decoration: none;
-  background: #ff4d6d;
-  color: white;
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: black;
   padding: 12px 25px;
   border-radius: 10px;
-  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-a:hover {
-  background: #e63956;
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+  color: #60a5fa;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
 }
